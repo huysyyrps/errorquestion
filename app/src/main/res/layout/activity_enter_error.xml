@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:my_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.EnterErrorActivity">
+
+    <com.example.errorquestion.view.BaseHeader
+            android:id="@+id/header"
+            style="@style/Header"
+            my_view:header_back_color="@color/theme_color"
+            my_view:header_is_left_iv_visiable="false"
+            my_view:header_title="@string/header_title" />
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:scaleType="fitXY"/>
+
+        <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:round="204dp"
+                tools:ignore="MissingConstraints" />
+
+        <TextView
+                android:id="@+id/tvEnterSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_margin="3dp"
+                android:text="小学 | 语文 "
+                android:gravity="center"
+                android:background="@drawable/bg_start_page_circle"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@color/black">
+
+        <ImageView
+                android:id="@+id/ivTakePhoto"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_takepgoto" />
+    </RelativeLayout>
+
+</LinearLayout>

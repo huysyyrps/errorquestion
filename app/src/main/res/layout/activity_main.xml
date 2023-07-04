@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:my_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.MainActivity">
+
+    <com.example.errorquestion.view.BaseHeader
+            android:id="@+id/header"
+            style="@style/Header"
+            my_view:header_back_color="@color/theme_color"
+            my_view:header_title="@string/header_title"
+            my_view:header_is_left_iv_visiable="false" />
+
+    <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" />
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+            <RadioButton
+                    android:id="@+id/rbHome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/home_radion"
+                    android:gravity="center"
+                    android:text="@string/home"
+                    android:textColor="@drawable/radion_color" />
+
+            <RadioButton
+                    android:id="@+id/rbError"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/error_radion"
+                    android:gravity="center"
+                    android:text="@string/error"
+                    android:textColor="@drawable/radion_color" />
+
+            <RadioButton
+                    android:id="@+id/rbStudent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/student_radion"
+                    android:gravity="center"
+                    android:text="@string/student"
+                    android:textColor="@drawable/radion_color" />
+
+            <RadioButton
+                    android:id="@+id/rbMySele"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/myself_radion"
+                    android:gravity="center"
+                    android:text="@string/myself"
+                    android:textColor="@drawable/radion_color" />
+
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

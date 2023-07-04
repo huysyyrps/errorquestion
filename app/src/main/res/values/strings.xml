@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">错题教练</string>
+    <string name="in_project">进入程序</string>
+    <string name="home">首页</string>
+    <string name="error">错题</string>
+    <string name="student">学生</string>
+    <string name="myself">我的</string>
+    <string name="skip">5s 跳过</string>
+    <string name="header_title">悦童校外托管中心</string>
+    <string name="recommend">推荐工具</string>
+    <string name="enter_num">录入数量</string>
+    <string name="enter_error">录错题</string>
+    <string name="enter_ranking">录题排行</string>
+    <string name="current_version">当前版本</string>
+    <string name="exit_project">退出程序</string>
+    <string name="tips">温馨提示</string>
+    <string name="exit_sure">您确定要退出当前程序吗？</string>
+    <string name="handler_data">数据请求中</string>
+    <string name="net_error">数据获取失败</string>
+    <string name="photo_get_error">图片获取失败</string>
+    <string name="camer_get_error">摄像头开启失败</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_cancel">取消</string>
+</resources>
